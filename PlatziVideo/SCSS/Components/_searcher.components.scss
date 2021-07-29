@@ -1,0 +1,32 @@
+.searcher{
+   align-content: center;
+   color: #FFF;
+   display: flex;
+   flex-flow: column nowrap;
+   justify-content: center;
+   margin: 0 auto;
+   text-align: center;
+   width: 80%;
+   height: 300px;
+
+   input[type=text]{
+      background-color: rgba($color: #9055a2, $alpha: .3);
+      border-radius: 2rem;
+      border: 2px solid #FFF;
+      color: #FFF;
+      height: 4rem;
+      margin-top: .5rem;
+      outline: none;
+      padding-left: 1rem;
+      transition: background .3s ease-in;
+
+      &:active,
+      &:focus{
+         background-color: rgba($color: #9055a2, $alpha: .5);
+      }
+   }
+
+   ::placeholder{
+      color: #FFF;
+   }
+}

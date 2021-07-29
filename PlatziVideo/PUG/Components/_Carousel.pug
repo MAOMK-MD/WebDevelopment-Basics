@@ -1,0 +1,22 @@
+mixin carouselItem(imgSrc,title,subTitle)
+   .carousel-item
+      img(src=imgSrc, alt="carousel image").carousel-item__img
+      .carousel-item__details
+         .carousel-item__details--container
+            .carousel-item__details--icons
+               img(src="Img/SVG/i-play.svg", alt="Play")
+               img(src="Img/SVG/i-plus.svg", alt="Plus")
+            .carousel-item__details--txt
+               p=title
+               p=subTitle
+
+
+section.carousel
+   .carousel__container
+      +carouselItem("Img/personas-1.jpg","Descriptive Title", "2019 16+ 114 minutos" )
+      +carouselItem("Img/personas-2.jpeg","Descriptive Title", "2019 16+ 114 minutos" )
+      +carouselItem("Img/personas-3.jpg","Descriptive Title", "2019 16+ 114 minutos" )
+      +carouselItem("Img/personas-4.jpg","Descriptive Title", "2019 16+ 114 minutos" )
+      +carouselItem("Img/personas-5.jpg","Descriptive Title", "2019 16+ 114 minutos" )
+      +carouselItem("Img/personas-6.jpg","Descriptive Title", "2019 16+ 114 minutos" )
+      +carouselItem("Img/personas-7.jpg","Descriptive Title", "2019 16+ 114 minutos" )

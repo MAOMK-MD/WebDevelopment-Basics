@@ -1,0 +1,39 @@
+doctype html
+html(lang="en")
+   head
+      meta(charset="UTF-8")
+      meta(http-equiv="X-UA-Compatible", content="IE=edge")
+      meta(name="viewport", content="width=device-width, initial-scale=1.0")
+      title PlatziVideo - Login
+      link(rel="preconnect" href="https://fonts.googleapis.com")
+      link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+      link(href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet")
+      link(rel="stylesheet", href="CSS/loginStyles.css")
+   body.bg--gradient
+
+      include Components/_HeaderLogin.pug
+
+      main.login
+         section.login__container
+            h2( tabindex="0") Log In
+            form.login__form(action="")
+               input#email(type="email", name="email", aria-label="Email", placeholder="Email...").login__form--input
+               input#password(type="password", name="password", aria-label="Password", placeholder="Password").login__form--input
+               button.login__form--button Log In
+               .login__form--wrapper
+                  label
+                     | 
+                     input#rememberMe(type="checkbox", name="rememberMe", value="true") 
+                     |  Remember me
+                  a(href="/") Forgot my password
+            section.login__social
+               .login__social--item
+                  img(src="Img/WEBP/i-google.webp", alt="Google Icon")
+                  p  Login with google
+               .login__social--item
+                  img(src="Img/WEBP/i-twitter.webp", alt="Twitter Icon")
+                  p  Login with twitter
+            p.login__register Don´t have an account?
+                  a(href="SignUp.html")  Sign Up 
+
+      include Components/_Footer.pug
